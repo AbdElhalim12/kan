@@ -104,6 +104,12 @@ The application will be running in the background. You can manage the containers
 - To stop the containers: `docker compose down`
 - To view logs: `docker compose logs -f`
 - To restart the containers: `docker compose restart`
+- To Update Kanbn to New Release:
+    - If you're using a compose file(docker-compose.yml), then do:
+      `docker compose pull`
+
+    - If you're not using a compose file, then do:
+      `docker pull ghcr.io/kanbn/kan:latest`
 
 For the complete Docker Compose configuration, see [docker-compose.yml](./docker-compose.yml) in the repository.
 
