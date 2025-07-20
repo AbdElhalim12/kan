@@ -104,7 +104,12 @@ The application will be running in the background. You can manage the containers
 - To stop the containers: `docker compose down`
 - To view logs: `docker compose logs -f`
 - To restart the containers: `docker compose restart`
+- To Update Kanbn To New Release:
+    - If you're using a compose file(docker-compose.yml), then do:
+        `docker compose pull`
 
+    - If you're not using a compose file, then do:
+        `docker pull ghcr.io/kanbn/kan:latest`
 For the complete Docker Compose configuration, see [docker-compose.yml](./docker-compose.yml) in the repository.
 
 > **Note**: The Docker Compose configuration shown above is a minimal example. For a complete setup with all features (email, OAuth, file uploads, etc.), you'll need to create a `.env` file with the required environment variables. See the Environment Variables section below for the full list of available options.
