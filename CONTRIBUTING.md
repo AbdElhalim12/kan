@@ -14,6 +14,17 @@ Thank you for your interest in contributing to Kan! This document provides guide
 8. Push to your fork: `git push origin feat/your-feature-name`
 9. Open a Pull Request
 
+you will need postgresSQL Database, head to : https://www.postgresql.org/download/ and install it. Then in pgAdmin4 create database.
+
+- Copy .env.example file: `cp .env.example .env`
+- In the .env file you will need to edit this line: `POSTGRES_URL= # e.g. postgresql://kan:your_password@your_host:5432/kan to your databse owner's username and password.`
+- Run `openssl rand -base64 24 | tr -dc 'a-zA-Z0-9' | head -c 32 ` and copy that key and add it to BETTER_AUTH_SECRET=`YOUR KEY HERE`
+
+
+for using e-mails without OTP or AUTH set:
+`NEXT_PUBLIC_ALLOW_CREDENTIALS= true
+NEXT_PUBLIC_DISABLE_SIGN_UP= false`
+
 ## Development Guidelines
 
 ### Code Style
