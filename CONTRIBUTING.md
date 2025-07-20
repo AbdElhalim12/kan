@@ -22,8 +22,8 @@ you will need postgresSQL Database, head to : https://www.postgresql.org/downloa
 
 
 for using e-mails without OTP or AUTH set:
-`NEXT_PUBLIC_ALLOW_CREDENTIALS= true
-NEXT_PUBLIC_DISABLE_SIGN_UP= false`
+`NEXT_PUBLIC_ALLOW_CREDENTIALS= true`
+`NEXT_PUBLIC_DISABLE_SIGN_UP= false`
 
 ## Development Guidelines
 
